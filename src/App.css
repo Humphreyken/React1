@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+.project {
+    background-color: white;
+    color: navy;
+    text-decoration: none;
+    border: 8px solid navy;
+    border-radius: 2rem 0;
+    font-size: 2rem;
+    width: 80%;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    font-weight: bolder;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.project:hover{
+    background-color: navy;
+    color: white;
+    transform: scale(1.05);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo-header{
+    gap: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todo-header input{
+    width: 32%;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-header button {
+    width: 25%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+    font-family: mont;
+}
+nav{
+    background-color: black;
+}
+.carousel-item img{
+    height: 30rem;
+}
+.services{
+    background-image: url(https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/homepage/families-gallery/2023/revuelto/revuelto_m.png);
+    height: 45rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem;
+    padding-top: 8rem;
+}
+.service{
+    text-shadow: 1px 1px 8px white;
+}
+.card-img-top{
+    height: 13rem;
+}
+.card{
+    margin: 1rem;
+}
+.registration-form{
+    max-width: 400px;
+    margin: 5rem auto;
+}
+
+
+@media (max-width : 768px) {
+    .todo-header{
+        flex-direction: column;
+    }
+
+    .todo-header input {
+        width: 100%;
+    }
+
+    .todo-header button {
+        width: 100%;
+    }
+
 }
